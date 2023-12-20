@@ -1,0 +1,207 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&family=Karla:wght@800&family=Raleway:wght@600&display=swap');
+
+
+@keyframes anim2{
+    0%{
+        transform: scale(1);
+        filter: blur(0px);
+
+    }
+    50%{
+        transform: scale(2);
+        filter: blur(2px);
+
+    }
+    100%{
+        transform: scale(1);
+        filter: blur(0px);
+    }
+}
+
+@keyframes anim1{
+    0%{
+        transform: scale(1); 
+        rotate: (0deg);
+    }
+    100%{
+        transform: scale(0.7);
+        rotate: (190deg);
+    }
+}
+
+@keyframes gradient {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+
+
+
+img{
+    width: 100%;
+    border-radius: 10px;
+    transition: all 0.5s ease;
+    filter: saturate(0%);
+    object-fit:fill;
+    box-shadow: #000 10px 10px 100%;
+}
+
+img:hover{
+    filter: saturate(100%);
+    transform: scale(1.1);
+    box-shadow: #fff 5px 5px 100px 2px;
+}
+
+html{
+    cursor: none;
+}
+
+body{
+    background:url(../img/texture.jpg);
+    background-size: 200vw 200vh;
+    height: inherit;
+    margin:0;
+    padding:0;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;  
+}
+
+.cursor{
+    width: 40px;
+    height: 40px;
+    cursor: none;
+    border: 1px solid white;
+    border-radius: 50%;
+    position: absolute;
+    animation: anim1 1s infinite alternate;
+    background-color: #fff;
+    mix-blend-mode: exclusion;
+}
+
+.cursor::before{
+    content:'';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 5px;
+    height: 5px;
+    border-radius: 50%;
+}
+
+.expand{
+animation: anim2 .5s;
+background: white;
+border: 1px solid white;
+mix-blend-mode: exclusion;
+}
+
+
+.mydiv{
+    position: absolute;
+    z-index: 9;
+    background-color: transparent;
+    text-align: center;
+    width: 10vw;
+    cursor: move;
+    
+}
+
+
+.mydivtitle{
+    padding: 10px, 10px, 10px, 10px;
+    cursor: move;
+    z-index: 10;
+    background-color: transparent;
+    color: white;
+    }
+
+
+
+    a{
+        font-size: 2vh;
+        color: white;
+        font-family: 'karla', sans-serif;
+        text-decoration: none;
+    }
+
+    a:visited{
+        color:white;
+        
+    }
+
+    h1{
+        font-size: 20vh;
+        font-family: 'Karla', sans-serif;
+        font-weight: 100;
+        display: flex;
+        margin: 0%;
+        background: -webkit-linear-gradient(180deg, #23678F, #8FCFDE,#F7BC5B, #ffd343);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: gradient 10s ease infinite;
+    }
+
+
+
+    h2{
+        font-size: 10vh;
+        font-family: 'Roboto', sans-serif;
+        font-weight: 100;
+        color: #fff;
+    }
+
+    h3{
+        font-size: 5vh;
+        font-family: 'Raleway', sans-serif;
+        font-weight: 100;
+        color: #fff;
+    }
+
+    p{
+        font-size: 3vh;
+        font-family: 'Raleway', sans-serif;
+        font-weight: 100;
+        color: #fff;
+    }
+
+    .compétence{
+        display: flex;
+        flex-direction: column;
+        background: -webkit-linear-gradient(0deg, #23678F, #8FCFDE,#F7BC5B, #ffd343);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        -webkit-animation: gradient 10s ease infinite;
+    }
+
+.content{ display: flex;
+    flex-direction: row;}
+
+.footer{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 10vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+.footer p{
+    font-size: 2vh;
+    color: white;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+

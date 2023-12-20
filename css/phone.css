@@ -1,0 +1,76 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background:url(../img/texture.jpg);
+}
+
+button{
+    background: none;
+    border: none;
+    color: white;
+    font-size: 100%;
+    font-family: 'Karla', sans-serif;
+    text-align: center;
+    display: flex;
+    margin: 0%;
+    background: -webkit-linear-gradient(360deg, #23678F, #8FCFDE,#F7BC5B, #ffd343);
+}
+
+    a{
+        text-decoration: none;
+        color: white;
+    }
+
+    .center {
+        text-align: center;
+    }
+    
+    h1 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 0;
+        font-size:larger;
+        width: 50%;
+        font-family: 'Karla', sans-serif;
+        text-align: center;
+        display: flex;
+        background: -webkit-linear-gradient(180deg, #23678F, #8FCFDE,#F7BC5B, #ffd343);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: gradient 10s ease infinite;
+    }
+    
+    button {
+        padding: 10px 20px;
+        font-size: 16px;
+        text-decoration: none;
+        background: none;
+        border: none;
+        color: white;
+        font-size: 100%;
+        font-family: 'Karla', sans-serif;
+        text-align: center;
+        display: flex;
+        margin: 0%;
+        background: -webkit-linear-gradient(360deg, #23678F, #8FCFDE,#F7BC5B, #ffd343);
+        border-radius: 15px;
+    }
+    
+    .bouton{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 0;
+    }
+
+    .titre{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 0;
+        margin-bottom: 2vh;
+    }

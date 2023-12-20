@@ -1,0 +1,67 @@
+.center{
+    text-align: center;
+}
+
+.video-container {
+    position: relative;
+    padding-bottom: 25%;
+    padding-top: 30px; height: 0; overflow: hidden;
+    border-radius: 30px;
+}
+
+body,html{
+  height:100vh;
+  font-size:16px;
+  font-family: 'Montserrat', sans-serif;
+  background:url(../img/texture.jpg);
+  background-size: 200vw 200vh;
+  color:#fff;
+  overflow-x: hidden;
+}
+
+h1,h3{
+  display:inline ;
+  Z-index: 999;
+  
+}
+
+header h3{
+  padding: 20px;
+  width:fit-content;
+  right:0;
+  top:1vh;
+  position:absolute;
+  background: -webkit-linear-gradient(180deg, #23678F, #8FCFDE,#F7BC5B, #ffd343);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+h1 {
+  font-size:6em;
+  font-weight:700;
+  text-transform:uppercase;
+  background: -webkit-linear-gradient(360deg, #23678F, #8FCFDE,#F7BC5B, #ffd343);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  left: 1vh;
+}
+
+.text{
+  bottom: 2vh;
+  left:50%;
+  text-align:center;
+  width:100%;
+  padding:0 20%;
+  box-sizing:border-box;
+}
+
+.bot{
+  color:#fff;
+  text-decoration:none;
+  padding:5px 5px;
+  border:1px solid #fff;
+  border-radius: 8px;
+  transition:all 0.2s ease;
+  display:inline-block;
+  margin-top:20px;
+}
