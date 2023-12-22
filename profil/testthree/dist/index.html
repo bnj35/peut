@@ -13,9 +13,40 @@
     
     <main>
     <h3><a href="../../../index.html">/RETOUR AU MENU/</a></h3>
-    <h2><a href="../../../img/CV.pdf">/CV EN HAUTE DEFINITION/</a></h2>
+    <h4>Cliquez sur le cv pour le lire .</h4>
+    <div class="zoneclic" onclick="redirect()"></div>
+    <style>
+      .zoneclic{
+        position: absolute;
+        top: 33vh;
+        left: 44vw;
+        width: 50%;
+        height: 150%;
+      }
 
-    
+      .zoneclic:hover{
+        cursor: pointer;
+      }
+
+      body{
+        overflow: hidden;
+      }
+
+      h4{
+        position: absolute;
+        top: 10vh;
+        left: 2vw;
+        width:auto;
+        color: #23678F;
+        font-size: 1em;
+        font-family:'Courier New', Courier, monospace;
+      }
+</style>
+    <script>
+      function redirect(){
+        window.location.href = "../../../img/CV.pdf";
+      }
+    </script>
   </main>
 
     
