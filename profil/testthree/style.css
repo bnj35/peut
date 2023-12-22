@@ -28,6 +28,7 @@ a{
 a:hover{
   filter: brightness(2);
   transition: ease 0.2s all;
+  transform: scale(1.3);
 }
 
 main{
